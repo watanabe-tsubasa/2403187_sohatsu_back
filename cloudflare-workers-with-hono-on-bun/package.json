@@ -1,0 +1,20 @@
+{
+  "name": "cloudflare-workers-with-hono-on-bun",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240314.0",
+    "@types/bun": "latest",
+    "wrangler": "^3.34.2"
+  },
+  "scripts": {
+    "start": "wrangler dev index.ts",
+    "deploy": "wrangler deploy --minify index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hono": "^4.1.0"
+  }
+}
